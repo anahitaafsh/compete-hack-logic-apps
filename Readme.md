@@ -12,6 +12,8 @@ In this tutorial, you will:
 - Perform several tests of your workflow to observe how it responds to different inputs
 - Delete the AWS resources you used to cleanup!
 
+### The AWS resources you will utilize include:
+
 - **AWS IAM -** You will use the [AWS Identity and Access Management (IAM) service](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) to securely give our services the required permissions to interact with each other.
 - **AWS Step Functions -** You will use [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to demonstrate a logical workflow 
 - **AWS Lambda -** You will use the compute service [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html), to create simulate the Sorting Hat's thoughts.
@@ -56,7 +58,7 @@ You will need to make sure you have the following components installed and set u
 3. Under the *Flow* tab, select the **Choice** state and create two rules, editing the conditions so that:
      - **Rule #1** variable `$.astral` matches the string *moon*
      - **Rule #2** variable `$.astral` matches the string *stars*
-     
+
 ![](/images/choice_state.png)
 ![](/images/choice.png)
 ![](/images/rule.png)
@@ -93,6 +95,8 @@ You will need to make sure you have the following components installed and set u
 }
 ```
 ![](/images/execution.png)
+![](/images/run.png)
+![](/images/events.png)
 
 3. As your workflow executes, each step will change color in the **Visual workflow** pane. Wait a few seconds for the execution to complete, then in the **Execution details** pane, choose **Execution input** and **Execution output** to view the inputs and results of your workflow
 
@@ -105,6 +109,7 @@ You will need to make sure you have the following components installed and set u
 }
 ```
 *Note: the `time` variable can also be `"time": "dawn"`*
+![](/images/fail.png)
 
 ## Step 4: Delete Services
 

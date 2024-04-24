@@ -56,6 +56,7 @@ You will need to make sure you have the following components installed and set u
 3. Under the *Flow* tab, select the **Choice** state and create two rules, editing the conditions so that:
      - **Rule #1** variable `$.astral` matches the string *moon*
      - **Rule #2** variable `$.astral` matches the string *stars*
+     
 ![](/images/choice_state.png)
 ![](/images/choice.png)
 ![](/images/rule.png)
